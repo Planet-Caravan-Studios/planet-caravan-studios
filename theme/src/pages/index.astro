@@ -6,18 +6,39 @@ import HomeHeroSection from '../components/sections/heros/HomeHeroSection.astro'
 ---
 
 <Layout>
+	
 	<HomeHeroSection />
+
 	<Container>
 		<section class="feature-card__section">
-			<h2>Landing Pages</h2>
+			<h2>Website Templates</h2>
+			<p>
+				Put on your sunglasses and brush up on your kung-fu, because you're gonna feel like Neo using these.
+			</p>
+			<div class="feature-card__grid">
+				<FeatureCard href="/landing-pages/landing-1" title="Next.js Template" imgSrc="/assets/images/home/screenshots/landing-1">
+				</FeatureCard>
+
+				<FeatureCard href="/landing-pages/landing-2" title="Astro Docs Template" imgSrc="/assets/images/home/screenshots/landing-2">
+				</FeatureCard>
+
+				
+			</div>
+		</section>
+	</Container>
+	
+	<Container>
+		<section class="feature-card__section">
+			<h2>Plugins &amp; Tools</h2>
 			<p>
 				Use one of our landing pages to jumpstart your website or
 				ad campaign.
 			</p>
 			<div class="feature-card__grid">
-				<FeatureCard href="/landing-pages/landing-1" title="Landing Page 1" imgSrc="/assets/images/home/screenshots/landing-1">
+				<FeatureCard href="/landing-pages/landing-2" title="Easy UTM Tracker Plugin" imgSrc="/assets/images/home/screenshots/landing-2">
 				</FeatureCard>
-				<FeatureCard href="/landing-pages/landing-2" title="Landing Page 2" imgSrc="/assets/images/home/screenshots/landing-2">
+
+				<FeatureCard href="/landing-pages/landing-1" title="Auto Screenshot Tool" imgSrc="/assets/images/home/screenshots/landing-1">
 				</FeatureCard>
 			</div>
 		</section>
